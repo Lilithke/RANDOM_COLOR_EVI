@@ -15,5 +15,14 @@
        android:text="(RED,GREEN,BLUE)"
        android:textAlignment="center"/>
 
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@id/textViewColor"
+       android:text="Random color generate"
+       android:textSize="20sp"
+       android:id="@+id/buttonColor"/>
+
+
 
 </RelativeLayout>
