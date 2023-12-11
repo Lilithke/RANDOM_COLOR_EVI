@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
     tools:context=".MainActivity">
 
    <TextView
@@ -21,7 +22,43 @@
        android:layout_above="@id/textViewColor"
        android:text="Random color generate"
        android:textSize="20sp"
-       android:id="@+id/buttonColor"/>
+       android:id="@+id/buttonRandomColor"/>
+
+   <Button
+       android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/buttonFixColor"
+      android:text="Fix color generate"
+      android:textSize="20sp"
+      android:layout_alignParentBottom="true"/>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/editTextBlue"
+       android:textSize="20sp"
+       android:hint="Blue"
+       android:layout_above="@+id/buttonFixColor"
+       android:inputType="number"/>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/editTextGreen"
+       android:textSize="20sp"
+       android:hint="Green"
+       android:layout_above="@+id/editTextBlue"
+       android:inputType="number"/>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/editTextRed"
+       android:textSize="20sp"
+       android:hint="Red"
+       android:layout_above="@+id/editTextGreen"
+       android:inputType="number"/>
+
 
 
 
